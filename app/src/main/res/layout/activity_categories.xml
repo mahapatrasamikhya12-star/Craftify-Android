@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0D2B33">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0D2B33"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/tvBack"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:text="←"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_marginEnd="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop by Category"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <!-- Categories List -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0D2B33"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Jewellery -->
+            <LinearLayout
+                android:id="@+id/catJewellery"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/category_card_bg"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="16dp"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Jewellery"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:src="@drawable/cat_earing"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle_cat_img"
+                        android:layout_marginStart="6dp"/>
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:src="@drawable/earingproduct2"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle_cat_img"
+                        android:layout_marginStart="6dp"/>
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:src="@drawable/jewelleryset"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle_cat_img"
+                        android:layout_marginStart="6dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Home Decor -->
+            <LinearLayout
+                android:id="@+id/catHomeDecor"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/category_card_bg"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="16dp"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Home Decor"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:src="@drawable/cat_homedecor"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle_cat_img"
+                        android:layout_marginStart="6dp"/>
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:src="@drawable/product1"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle_cat_img"
+                        android:layout_marginStart="6dp"/>
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:src="@drawable/homedecorproduct1"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle_cat_img"
+                        android:layout_marginStart="6dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Gifts -->
+            <LinearLayout
+                android:id="@+id/catGifts"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/category_card_bg"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="16dp"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Gifts"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:src="@drawable/cat_gifts"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle_cat_img"
+                        android:layout_marginStart="6dp"/>
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:src="@drawable/gift1"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle_cat_img"
+                        android:layout_marginStart="6dp"/>
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:src="@drawable/gifthamper"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle_cat_img"
+                        android:layout_marginStart="6dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Calendars -->
+            <LinearLayout
+                android:id="@+id/catCalendar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/category_card_bg"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="16dp"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Calendars"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:src="@drawable/cat_calender"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle_cat_img"
+                        android:layout_marginStart="6dp"/>
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:src="@drawable/photocalender"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle_cat_img"
+                        android:layout_marginStart="6dp"/>
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:src="@drawable/cat_calender"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle_cat_img"
+                        android:layout_marginStart="6dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Gift Hamper -->
+            <LinearLayout
+                android:id="@+id/catGiftHamper"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/category_card_bg"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="16dp"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Gift Hamper"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:src="@drawable/cat_gifthamper"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle_cat_img"
+                        android:layout_marginStart="6dp"/>
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:src="@drawable/gifthamper2"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle_cat_img"
+                        android:layout_marginStart="6dp"/>
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:src="@drawable/gifthamper"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle_cat_img"
+                        android:layout_marginStart="6dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Cards -->
+            <LinearLayout
+                android:id="@+id/catCards"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/category_card_bg"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="16dp"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cards"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:text="💌"
+                        android:textSize="28sp"
+                        android:gravity="center"
+                        android:background="@drawable/circle_cat_img"
+                        android:layout_marginStart="6dp"/>
+
+                    <TextView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:text="🎴"
+                        android:textSize="28sp"
+                        android:gravity="center"
+                        android:background="@drawable/circle_cat_img"
+                        android:layout_marginStart="6dp"/>
+
+                    <TextView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:text="💝"
+                        android:textSize="28sp"
+                        android:gravity="center"
+                        android:background="@drawable/circle_cat_img"
+                        android:layout_marginStart="6dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- All Items -->
+            <LinearLayout
+                android:id="@+id/catAll"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/category_card_bg"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="16dp"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="All Items"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:text="🛍️"
+                        android:textSize="28sp"
+                        android:gravity="center"
+                        android:background="@drawable/circle_cat_img"
+                        android:layout_marginStart="6dp"/>
+
+                    <TextView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:text="🎁"
+                        android:textSize="28sp"
+                        android:gravity="center"
+                        android:background="@drawable/circle_cat_img"
+                        android:layout_marginStart="6dp"/>
+
+                    <TextView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:text="✨"
+                        android:textSize="28sp"
+                        android:gravity="center"
+                        android:background="@drawable/circle_cat_img"
+                        android:layout_marginStart="6dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Craftify</string>
+    <string name="cart_title">My Cart</string>
+    <string name="checkout">Checkout</string>
+</resources>

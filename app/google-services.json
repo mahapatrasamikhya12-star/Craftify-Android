@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "830655545232",
+    "project_id": "craftify-44fda",
+    "storage_bucket": "craftify-44fda.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830655545232:android:da7464d410081c40ed7d15",
+        "android_client_info": {
+          "package_name": "com.example.craftify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQdcscWBKEKm68f3vRTAvQDCYEVSwAwq8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

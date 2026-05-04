@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F4F4">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCart"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@color/primary"
+        android:paddingTop="32dp"
+        android:elevation="4dp"/>
+
+    <!-- Step Indicator -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:elevation="2dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="① Cart" android:textColor="@color/primary"
+            android:textSize="12sp" android:textStyle="bold"/>
+        <View android:layout_width="32dp" android:layout_height="1dp"
+            android:background="#CCCCCC" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="② Address" android:textColor="#AAAAAA" android:textSize="12sp"/>
+        <View android:layout_width="32dp" android:layout_height="1dp"
+            android:background="#CCCCCC" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="③ Payment" android:textColor="#AAAAAA" android:textSize="12sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvItemCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textColor="@color/primary"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:background="#FFFFFF"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Empty state -->
+    <LinearLayout
+        android:id="@+id/layoutEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="🛒" android:textSize="64sp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Your cart is empty"
+            android:textSize="20sp" android:textStyle="bold" android:textColor="#333333"
+            android:layout_marginTop="16dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Add some handmade crafts!"
+            android:textSize="14sp" android:textColor="#888888" android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:clipToPadding="false"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Bottom summary -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:elevation="10dp"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚚  FREE delivery on orders above ₹500"
+            android:textSize="12sp"
+            android:textColor="#2E7D32"
+            android:background="#E8F5E9"
+            android:padding="8dp"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="4dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Price"
+                android:textColor="#555555" android:textSize="14sp"/>
+            <TextView android:id="@+id/tvSubtotal" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="₹0"
+                android:textColor="#222222" android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="8dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Delivery"
+                android:textColor="#555555" android:textSize="14sp"/>
+            <TextView android:id="@+id/tvDelivery" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="FREE"
+                android:textColor="#2E7D32" android:textSize="14sp" android:textStyle="bold"/>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#EEEEEE" android:layout_marginBottom="8dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="14dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Total Amount"
+                android:textColor="#111111" android:textSize="15sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/tvGrandTotal" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="₹0"
+                android:textColor="@color/primary" android:textSize="17sp" android:textStyle="bold"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:text="Continue"
+            android:backgroundTint="@color/accent"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:stateListAnimator="@null"/>
+    </LinearLayout>
+
+</LinearLayout>

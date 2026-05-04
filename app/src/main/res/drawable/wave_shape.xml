@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="80dp"
+    android:viewportWidth="360"
+    android:viewportHeight="80">
+
+    <!-- Teal background -->
+    <path
+        android:fillColor="#4A7C8E"
+        android:pathData="M0,0 L360,0 L360,50 Q180,80 0,50 Z"/>
+
+    <!-- Cream wave -->
+    <path
+        android:fillColor="#F5ECD7"
+        android:pathData="M0,50 Q180,80 360,50 L360,80 L0,80 Z"/>
+
+</vector>

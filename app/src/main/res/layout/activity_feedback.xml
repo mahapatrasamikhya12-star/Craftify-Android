@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0D2B33"
+    android:fitsSystemWindows="true">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:paddingTop="32dp">
+
+        <TextView
+            android:id="@+id/tvBack"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:text="←"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share Feedback"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/start_card_bg"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="20dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="💬"
+                    android:textSize="40sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="We value your feedback"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Help us improve Craftify"
+                    android:textColor="#A8CDD4"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <!-- Rating -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/start_card_bg"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rate your experience"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/star1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:text="☆"
+                        android:textSize="28sp"
+                        android:gravity="center"
+                        android:textColor="#A8CDD4"/>
+
+                    <TextView
+                        android:id="@+id/star2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:text="☆"
+                        android:textSize="28sp"
+                        android:gravity="center"
+                        android:textColor="#A8CDD4"/>
+
+                    <TextView
+                        android:id="@+id/star3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:text="☆"
+                        android:textSize="28sp"
+                        android:gravity="center"
+                        android:textColor="#A8CDD4"/>
+
+                    <TextView
+                        android:id="@+id/star4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:text="☆"
+                        android:textSize="28sp"
+                        android:gravity="center"
+                        android:textColor="#A8CDD4"/>
+
+                    <TextView
+                        android:id="@+id/star5"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:text="☆"
+                        android:textSize="28sp"
+                        android:gravity="center"
+                        android:textColor="#A8CDD4"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Feedback Type -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/btnTypeSuggestion"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Suggestion"
+                    android:gravity="center"
+                    android:background="@drawable/type_btn_active"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:id="@+id/btnTypeBug"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Bug"
+                    android:gravity="center"
+                    android:background="@drawable/type_btn_inactive"
+                    android:textColor="#A8CDD4"/>
+
+                <TextView
+                    android:id="@+id/btnTypeOther"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Other"
+                    android:gravity="center"
+                    android:background="@drawable/type_btn_inactive"
+                    android:textColor="#A8CDD4"/>
+            </LinearLayout>
+
+            <!-- Name -->
+            <EditText
+                android:id="@+id/etFeedbackName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Your Name"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#6A9FAA"
+                android:background="@drawable/input_bg_dark"
+                android:padding="10dp"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Message -->
+            <EditText
+                android:id="@+id/etFeedbackMessage"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:hint="Your Message"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#6A9FAA"
+                android:background="@drawable/input_bg_dark"
+                android:padding="10dp"
+                android:gravity="top"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Submit -->
+            <Button
+                android:id="@+id/btnSubmitFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Submit Feedback"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

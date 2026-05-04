@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#4A7C8E</color>
+    <color name="primary_dark">#2E5F70</color>
+    <color name="dark_teal">#0D3B3E</color>
+    <color name="accent">#C4622D</color>
+    <color name="cream">#F5ECD7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="text_dark">#212121</color>
+    <color name="text_gray">#757575</color>
+    <color name="input_bg">#1A4A4E</color>
+    <color name="craftify_green">#0B4D3C</color>
+</resources>

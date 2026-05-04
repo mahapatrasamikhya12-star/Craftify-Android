@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Confetti decorations - small curved lines -->
+    <TextView
+        android:id="@+id/confetti1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="〜"
+        android:textColor="#E91E8C"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:alpha="0"
+        android:layout_gravity="center"
+        android:translationX="-130dp"
+        android:translationY="30dp"/>
+
+    <TextView
+        android:id="@+id/confetti2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="〜"
+        android:textColor="#E91E8C"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:alpha="0"
+        android:layout_gravity="center"
+        android:translationX="110dp"
+        android:translationY="20dp"/>
+
+    <TextView
+        android:id="@+id/confetti3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="〜"
+        android:textColor="#00BCD4"
+        android:textSize="35sp"
+        android:alpha="0"
+        android:layout_gravity="center"
+        android:translationX="90dp"
+        android:translationY="90dp"/>
+
+    <TextView
+        android:id="@+id/confetti4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="〜"
+        android:textColor="#FFC107"
+        android:textSize="35sp"
+        android:alpha="0"
+        android:layout_gravity="center"
+        android:translationX="-80dp"
+        android:translationY="-90dp"/>
+
+    <TextView
+        android:id="@+id/confetti5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✦"
+        android:textColor="#E91E8C"
+        android:textSize="24sp"
+        android:alpha="0"
+        android:layout_gravity="center"
+        android:translationX="-150dp"
+        android:translationY="-80dp"/>
+
+    <TextView
+        android:id="@+id/confetti6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✦"
+        android:textColor="#FFC107"
+        android:textSize="24sp"
+        android:alpha="0"
+        android:layout_gravity="center"
+        android:translationX="140dp"
+        android:translationY="-60dp"/>
+
+    <!-- Center content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Teal filled circle with white checkmark -->
+        <TextView
+            android:id="@+id/tvCheckBadge"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="✓"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/badge_white"
+            android:alpha="0"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:layout_marginBottom="40dp"/>
+
+        <!-- Order Confirmed text -->
+        <TextView
+            android:id="@+id/tvOrderConfirmed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Confirmed!"
+            android:textColor="#1A1A1A"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:alpha="0"/>
+
+        <TextView
+            android:id="@+id/tvOrderSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your order has been placed successfully"
+            android:textColor="#888888"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:alpha="0"/>
+
+    </LinearLayout>
+
+</FrameLayout>
